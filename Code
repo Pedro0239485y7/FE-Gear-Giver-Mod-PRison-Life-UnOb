@@ -1,0 +1,1584 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 41 | Scripts: 20 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.KillAllSkids
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[KillAllSkids]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.KillAllSkids.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["Active"] = true;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["2"]["Selectable"] = true;
+G2L["2"]["Size"] = UDim2.new(0, 508, 0, 409);
+G2L["2"]["Position"] = UDim2.new(0.29292, 0, 0.23705, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextLabel
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["TextWrapped"] = true;
+G2L["3"]["TextStrokeTransparency"] = 0;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextScaled"] = true;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(107, 107, 107);
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["Size"] = UDim2.new(0, 508, 0, 55);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[Prison Life Gear Mod (BY: BLUECORGI99)]];
+G2L["3"]["Position"] = UDim2.new(0, 0, 0, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["4"] = Instance.new("TextButton", G2L["2"]);
+G2L["4"]["TextWrapped"] = true;
+G2L["4"]["TextStrokeTransparency"] = 0;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["TextScaled"] = true;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[Speed Coil]];
+G2L["4"]["Position"] = UDim2.new(0.01391, 0, 0.16254, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["6"] = Instance.new("TextButton", G2L["2"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["TextStrokeTransparency"] = 0;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[Red Scythe]];
+G2L["6"]["Position"] = UDim2.new(0.36633, 0, 0.16254, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["8"] = Instance.new("TextButton", G2L["2"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["TextStrokeTransparency"] = 0;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["TextScaled"] = true;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[Classic Sword]];
+G2L["8"]["Position"] = UDim2.new(0.71411, 0, 0.16254, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["b"] = Instance.new("TextButton", G2L["2"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["TextStrokeTransparency"] = 0;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Azure Sword]];
+G2L["b"]["Position"] = UDim2.new(0.36633, 0, 0.2988, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["d"] = Instance.new("TextButton", G2L["2"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["TextStrokeTransparency"] = 0;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Sword Of Light]];
+G2L["d"]["Position"] = UDim2.new(0.01391, 0, 0.2988, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["f"] = Instance.new("TextButton", G2L["2"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["TextStrokeTransparency"] = 0;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[Block Sword]];
+G2L["f"]["Position"] = UDim2.new(0.71411, 0, 0.2988, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["10"] = Instance.new("LocalScript", G2L["f"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["11"] = Instance.new("TextButton", G2L["2"]);
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["TextStrokeTransparency"] = 0;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["TextScaled"] = true;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[Katana (R6)]];
+G2L["11"]["Position"] = UDim2.new(0.01391, 0, 0.44463, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["12"] = Instance.new("LocalScript", G2L["11"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["13"] = Instance.new("TextButton", G2L["2"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["TextStrokeTransparency"] = 0;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["TextScaled"] = true;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[Gravity Coil]];
+G2L["13"]["Position"] = UDim2.new(0.36633, 0, 0.44463, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["14"] = Instance.new("LocalScript", G2L["13"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["15"] = Instance.new("TextButton", G2L["2"]);
+G2L["15"]["TextWrapped"] = true;
+G2L["15"]["TextStrokeTransparency"] = 0;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextSize"] = 14;
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["TextScaled"] = true;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[Cyberpunk Sword]];
+G2L["15"]["Position"] = UDim2.new(0.71411, 0, 0.44463, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["16"] = Instance.new("LocalScript", G2L["15"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["17"] = Instance.new("TextButton", G2L["2"]);
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["TextStrokeTransparency"] = 0;
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["TextScaled"] = true;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[Bone Scythe]];
+G2L["17"]["Position"] = UDim2.new(0.71644, 0, 0.58599, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["18"] = Instance.new("LocalScript", G2L["17"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["19"] = Instance.new("TextButton", G2L["2"]);
+G2L["19"]["TextWrapped"] = true;
+G2L["19"]["TextStrokeTransparency"] = 0;
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["TextScaled"] = true;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[Rainbow Sword]];
+G2L["19"]["Position"] = UDim2.new(0.36865, 0, 0.58599, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["1b"] = Instance.new("TextButton", G2L["2"]);
+G2L["1b"]["TextWrapped"] = true;
+G2L["1b"]["TextStrokeTransparency"] = 0;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextSize"] = 14;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["TextScaled"] = true;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[Overseer Sword]];
+G2L["1b"]["Position"] = UDim2.new(0.01624, 0, 0.58599, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["1d"] = Instance.new("TextButton", G2L["2"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["TextStrokeTransparency"] = 0;
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["TextScaled"] = true;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[Sword Of Water]];
+G2L["1d"]["Position"] = UDim2.new(0.71411, 0, 0.86257, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["1e"] = Instance.new("LocalScript", G2L["1d"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["1f"] = Instance.new("TextButton", G2L["2"]);
+G2L["1f"]["TextWrapped"] = true;
+G2L["1f"]["TextStrokeTransparency"] = 0;
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["TextScaled"] = true;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[Elemental (R6)]];
+G2L["1f"]["Position"] = UDim2.new(0.36633, 0, 0.86257, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["20"] = Instance.new("LocalScript", G2L["1f"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["21"] = Instance.new("TextButton", G2L["2"]);
+G2L["21"]["TextWrapped"] = true;
+G2L["21"]["TextStrokeTransparency"] = 0;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextSize"] = 14;
+G2L["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["TextScaled"] = true;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[Earth Sword]];
+G2L["21"]["Position"] = UDim2.new(0.01391, 0, 0.86257, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["22"] = Instance.new("LocalScript", G2L["21"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["23"] = Instance.new("TextButton", G2L["2"]);
+G2L["23"]["TextWrapped"] = true;
+G2L["23"]["TextStrokeTransparency"] = 0;
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["TextSize"] = 14;
+G2L["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["TextScaled"] = true;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Text"] = [[Eye of Hell]];
+G2L["23"]["Position"] = UDim2.new(0.71411, 0, 0.72121, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["24"] = Instance.new("LocalScript", G2L["23"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["25"] = Instance.new("TextButton", G2L["2"]);
+G2L["25"]["TextWrapped"] = true;
+G2L["25"]["TextStrokeTransparency"] = 0;
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["TextScaled"] = true;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[Dark Matter (R6)]];
+G2L["25"]["Position"] = UDim2.new(0.36633, 0, 0.72121, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["26"] = Instance.new("LocalScript", G2L["25"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton
+G2L["27"] = Instance.new("TextButton", G2L["2"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["TextStrokeTransparency"] = 0;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["TextSize"] = 14;
+G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["TextScaled"] = true;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27"]["Size"] = UDim2.new(0, 136, 0, 46);
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Text"] = [[Buster Sword]];
+G2L["27"]["Position"] = UDim2.new(0.01391, 0, 0.72121, 0);
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+G2L["28"] = Instance.new("LocalScript", G2L["27"]);
+
+
+
+-- StarterGui.KillAllSkids.LocalScript
+G2L["29"] = Instance.new("LocalScript", G2L["1"]);
+
+
+
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_5()
+	local script = G2L["5"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local speed_coil = Instance.new("Tool")
+		speed_coil.Grip = CFrame.fromMatrix(Vector3.new(0.03867721185088158, 2.956000196223087e-16, -0.7565536499023438), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
+		speed_coil.GripPos = Vector3.new(0.03867721185088158, 2.956000196223087e-16, -0.7565536499023438)
+		speed_coil.TextureId = "rbxassetid://12957402434"
+		speed_coil.WorldPivot = CFrame.fromMatrix(Vector3.new(-41.772125244140625, 10.600000381469727, 96.12055969238281), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
+		speed_coil.Name = "SpeedCoil"
+		speed_coil.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-41.772125244140625, 10.600000381469727, 96.12055969238281), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
+		handle.Size = Vector3.new(1, 1.2000000476837158, 2)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = speed_coil
+
+		local coil_sound = Instance.new("Sound")
+		coil_sound.SoundId = "rbxassetid://99173388"
+		coil_sound.Volume = 1
+		coil_sound.Name = "CoilSound"
+		coil_sound.Parent = handle
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "rbxassetid://16606212"
+		mesh.TextureId = "rbxassetid://99170547"
+		mesh.Scale = Vector3.new(0.699999988079071, 0.699999988079071, 0.699999988079071)
+		mesh.Parent = handle
+
+		handle.Touched:Connect(function()end)
+		local touch_interest = handle:WaitForChild("TouchInterest")
+
+		speed_coil.Equipped:Connect(function()
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+		end)
+
+		speed_coil.Unequipped:Connect(function()
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		end)
+	end)
+end;
+task.spawn(C_5);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_7()
+	local script = G2L["7"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local scythe = Instance.new("Tool")
+		scythe.Grip = CFrame.fromMatrix(Vector3.new(0.0007686614990234375, -0.4924072325229645, -0.7983719110488892), Vector3.new(-0.9838138818740845, 0.06910257786512375, 0.16533301770687103), Vector3.new(-0.016353439539670944, 0.8841786980628967, -0.4668625295162201), Vector3.new(-0.17844536900520325, -0.46200957894325256, -0.8687372207641602))
+		scythe.GripForward = Vector3.new(0.17844536900520325, 0.46200957894325256, 0.8687372207641602)
+		scythe.GripPos = Vector3.new(0.0007686614990234375, -0.4924072325229645, -0.7983719110488892)
+		scythe.GripRight = Vector3.new(-0.9838138818740845, 0.06910257786512375, 0.16533301770687103)
+		scythe.GripUp = Vector3.new(-0.016353439539670944, 0.8841786980628967, -0.4668625295162201)
+		scythe.TextureId = "rbxassetid://1609077907"
+		scythe.WorldPivot = CFrame.fromMatrix(Vector3.new(-6.417652130126953, 15.600000381469727, 127.1673583984375), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
+		scythe.Name = "Scythe"
+		scythe.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-6.417652130126953, 15.600000381469727, 127.1673583984375), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
+		handle.Size = Vector3.new(4, 1, 2)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = scythe
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "rbxassetid://218497396 "
+		mesh.TextureId = "rbxassetid://1489112250"
+		mesh.Scale = Vector3.new(2, 2, 2)
+		mesh.Parent = handle
+
+		handle.Touched:Connect(function()end)
+		local touch_interest = handle:WaitForChild("TouchInterest")
+
+		local sounds = Instance.new("Folder")
+		sounds.Name = "Sounds"
+		sounds.Parent = scythe
+
+		local slash = Instance.new("Sound")
+		slash.SoundId = "rbxassetid://88633606"
+		slash.Volume = 1
+		slash.Name = "Slash"
+		slash.Parent = sounds
+
+		local anims = Instance.new("Folder")
+		anims.Name = "Anims"
+		anims.Parent = handle
+
+		local swing = Instance.new("Animation")
+		swing.AnimationId = "rbxassetid://218504594"
+		swing.Name = "Swing"
+		swing.Parent = anims
+
+		local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(swing)
+
+
+
+
+		scythe.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://218504594"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=handle c.MaxDistance=math.huge c.SoundId="rbxassetid://88633606"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)
+
+		scythe.Activated:Connect(function()
+			AnimTrack:Play()
+			slash:Play()
+		end)
+
+	end)
+end;
+task.spawn(C_7);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_9()
+	local script = G2L["9"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local classic_sword = Instance.new("Tool")
+		classic_sword.Grip = CFrame.fromMatrix(Vector3.new(0, 0, -1.5), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1), Vector3.new(1, 0, 0))
+		classic_sword.GripForward = Vector3.new(-1, -0, -0)
+		classic_sword.GripPos = Vector3.new(0, 0, -1.5)
+		classic_sword.GripRight = Vector3.new(0, 1, 0)
+		classic_sword.GripUp = Vector3.new(0, 0, 1)
+		classic_sword.TextureId = "rbxasset://Textures/Sword128.png"
+		classic_sword.WorldPivot = CFrame.fromMatrix(Vector3.new(-114.38774108886719, 24.64931297302246, 83.36888122558594), Vector3.new(0.09104403853416443, 0.5370116829872131, -0.8386485576629639), Vector3.new(-0.8810994625091553, 0.43589484691619873, 0.18346372246742249), Vector3.new(0.46408435702323914, 0.7222291231155396, 0.5128455758094788))
+		classic_sword.Name = "ClassicSword"
+		classic_sword.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.38823533058166504, 0.37254902720451355, 0.38431376218795776)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-114.44070434570312, 24.240930557250977, 82.50543212890625), Vector3.new(0.09104403853416443, 0.5370116829872131, -0.8386485576629639), Vector3.new(-0.8810994625091553, 0.43589484691619873, 0.18346372246742249), Vector3.new(0.46408435702323914, 0.7222291231155396, 0.5128455758094788))
+		handle.Color = Color3.new(0.388235, 0.372549, 0.384314)
+		handle.Locked = true
+		handle.Orientation = Vector3.new(-46.23899841308594, 42.143001556396484, 50.933998107910156)
+		handle.Reflectance = 0.4000000059604645
+		handle.Rotation = Vector3.new(-54.62200164794922, 27.650999069213867, 84.10099792480469)
+		handle.Size = Vector3.new(1, 0.800000011920929, 4)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = classic_sword
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "rbxasset://fonts/sword.mesh"
+		mesh.TextureId = "rbxasset://textures/SwordTexture.png"
+		mesh.Parent = handle
+
+		classic_sword.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://218504594"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=handle c.MaxDistance=math.huge c.SoundId="rbxassetid://88633606"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)
+
+		local swing = Instance.new("Animation")
+		swing.AnimationId = "rbxassetid://2954124238"
+		swing.Name = "Swing"
+		swing.Parent = classic_sword
+
+		local sound = Instance.new("Sound")
+		sound.RollOffMode = Enum.RollOffMode.InverseTapered
+		sound.SoundId = "rbxassetid://935843979"
+		sound.Parent = handle
+
+		local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(swing)
+
+		classic_sword.Activated:Connect(function()
+			AnimTrack:Play()
+			sound:Play()
+		end)
+	end)
+end;
+task.spawn(C_9);
+-- StarterGui.KillAllSkids.Frame.LocalScript
+local function C_a()
+	local script = G2L["a"];
+	script.Parent.Draggable = true
+end;
+task.spawn(C_a);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_c()
+	local script = G2L["c"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local azure = Instance.new("Tool")
+		azure.Grip = CFrame.fromMatrix(Vector3.new(0, -2.299999952316284, 0), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
+		azure.GripPos = Vector3.new(0, -2.299999952316284, 0)
+		azure.ToolTip = "The eye is  always watching..."
+		azure.TextureId = "http://www.roblox.com/asset/?id=10079486673"
+		azure.WorldPivot = CFrame.fromMatrix(Vector3.new(-116.49610900878906, 34.321067810058594, 103.52392578125), Vector3.new(0, 0, 1), Vector3.new(-0.7071067690849304, -0.7071067690849304, 0), Vector3.new(0.7071067690849304, -0.7071067690849304, 0))
+		azure.Name = "Azure"
+		azure.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.38823533058166504, 0.37254902720451355, 0.38431376218795776)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-116.48859405517578, 34.336944580078125, 103.55853271484375), Vector3.new(0, 0, 1), Vector3.new(-0.7071067690849304, -0.7071067690849304, 0), Vector3.new(0.7071067690849304, -0.7071067690849304, 0))
+		handle.Color = Color3.new(0.388235, 0.372549, 0.384314)
+		handle.Locked = true
+		handle.Material = Enum.Material.Concrete
+		handle.Orientation = Vector3.new(45, 90, 180)
+		handle.Rotation = Vector3.new(90, 45, 90)
+		handle.Size = Vector3.new(0.30000001192092896, 5.239999771118164, 0.6399999856948853)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = azure
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "http://www.roblox.com/asset/?id=94840342"
+		mesh.TextureId = "http://www.roblox.com/asset/?id=120869251"
+		mesh.Scale = Vector3.new(0.8500000238418579, 0.8500000238418579, 0.8500000238418579)
+		mesh.Parent = handle
+
+		local slash = Instance.new("Animation")
+		slash.AnimationId = "http://www.roblox.com/asset/?id=54584713"
+		slash.Name = "Slash"
+		slash.Parent = azure
+
+		local slashsound = Instance.new("Sound")
+		slashsound.RollOffMode = Enum.RollOffMode.InverseTapered
+		slashsound.SoundId = "rbxassetid://935843979"
+		slashsound.Name = "slashsound"
+		slashsound.Parent = azure
+
+		azure.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=workspace c.MaxDistance=math.huge c.SoundId="rbxassetid://608537390"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)end end end end)
+
+		azure.Activated:Connect(function()
+			slashsound:Play()
+			local Animtrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(slash)
+			Animtrack:Play()
+		end)
+	end)
+end;
+task.spawn(C_c);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_e()
+	local script = G2L["e"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local sword_of_light = Instance.new("Tool")
+		sword_of_light.Grip = CFrame.fromMatrix(Vector3.new(0, 0, -2), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1), Vector3.new(1, 0, 0))
+		sword_of_light.GripForward = Vector3.new(-1, -0, -0)
+		sword_of_light.GripPos = Vector3.new(0, 0, -2)
+		sword_of_light.GripRight = Vector3.new(0, 1, 0)
+		sword_of_light.GripUp = Vector3.new(0, 0, 1)
+		sword_of_light.ToolTip = "Summon the Light!"
+		sword_of_light.TextureId = "http://www.roblox.com/asset/?id=77403660"
+		sword_of_light.WorldPivot = CFrame.fromMatrix(Vector3.new(-114.33476257324219, 26.232650756835938, 84.23233032226562), Vector3.new(0.7071068286895752, -0.7071068286895752, 0), Vector3.new(0, 0, -1), Vector3.new(0.7071068286895752, 0.7071068286895752, 0))
+		sword_of_light.Name = "SwordOfLight"
+		sword_of_light.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.38823533058166504, 0.37254902720451355, 0.38431376218795776)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-114.38774108886719, 25.93095588684082, 83.36888122558594), Vector3.new(0.7071068286895752, -0.7071068286895752, 0), Vector3.new(0, 0, -1), Vector3.new(0.7071068286895752, 0.7071068286895752, 0))
+		handle.Color = Color3.new(0.388235, 0.372549, 0.384314)
+		handle.CustomPhysicalProperties = PhysicalProperties.new(0.009999999776482582, 0, 0, 0, 0)
+		handle.Locked = true
+		handle.Orientation = Vector3.new(-45, 90, -90)
+		handle.Rotation = Vector3.new(-90, 45, 0)
+		handle.Size = Vector3.new(0.550000011920929, 0.30000001192092896, 4.619999885559082)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = sword_of_light
+
+		local sword_mesh = Instance.new("SpecialMesh")
+		sword_mesh.MeshType = Enum.MeshType.FileMesh
+		sword_mesh.MeshId = "http://www.roblox.com/asset/?id=77403584"
+		sword_mesh.TextureId = "http://www.roblox.com/asset/?id=77403631"
+		sword_mesh.Scale = Vector3.new(0.75, 0.75, 0.75)
+		sword_mesh.Name = "SwordMesh"
+		sword_mesh.Parent = handle
+
+		local slash = Instance.new("Animation")
+		slash.AnimationId = "http://www.roblox.com/Asset?ID=54584713"
+		slash.Name = "Slash"
+		slash.Parent = sword_of_light
+
+		local slash_2 = Instance.new("Sound")
+		slash_2.SoundId = "http://www.roblox.com/asset/?id=12222208"
+		slash_2.Volume = 0.6000000238418579
+		slash_2.Name = "Slash"
+		slash_2.Parent = sword_of_light
+
+		sword_of_light.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://218504594"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=handle c.MaxDistance=math.huge c.SoundId="rbxassetid://88633606"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)
+		sword_of_light.Activated:Connect(function()
+			slash_2:Play()
+			local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(slash)
+			AnimTrack:Play()
+		end)
+
+
+	end)
+end;
+task.spawn(C_e);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_10()
+	local script = G2L["10"];
+	script.Parent.Activated:Connect(function()
+		local plr=game.Players.LocalPlayer
+		local tool=Instance.new("Tool",plr.Backpack)
+		tool.GripPos=Vector3.new(0.1,-1,0)
+		tool.Name="Sword"
+		local k=Instance.new("Part",tool)
+		k.Name="Handle"
+		k.Size=Vector3.new(0.4,4,0.4)
+		local l=Instance.new("Animation",tool)
+		l.AnimationId="rbxassetid://218504594"
+		local m=plr.Character.Humanoid:LoadAnimation(l)
+		db=true
+		da=false
+		tool.Equipped:connect(function()
+			tool.Activated:connect(function()
+				if db==true then
+					db=false
+					m:Play()
+					wait()
+					da=true
+					db=true
+					wait(0.5)
+					da=false
+				end
+			end)
+		end)
+		k.Touched:connect(function(n)
+			if da==true then
+				local o=n.Parent.Humanoid
+				if o~=nil then
+					local p=game.Players:FindFirstChild(n.Parent.Name)
+					for j=1,10 do
+						if p.Name~="FunnyVideo15"then
+							game.ReplicatedStorage.meleeEvent:FireServer(p)
+						end 
+					end
+				end 
+			end
+		end)
+	end)
+end;
+task.spawn(C_10);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_12()
+	local script = G2L["12"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local katana = Instance.new("Tool")
+		katana.Grip = CFrame.fromMatrix(Vector3.new(0, 0, -1.5), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1), Vector3.new(1, 0, 0))
+		katana.GripForward = Vector3.new(-1, -0, -0)
+		katana.GripPos = Vector3.new(0, 0, -1.5)
+		katana.GripRight = Vector3.new(0, 1, 0)
+		katana.GripUp = Vector3.new(0, 0, 1)
+		katana.TextureId = "rbxasset://Textures/Sword128.png"
+		katana.WorldPivot = CFrame.fromMatrix(Vector3.new(-185.24185180664062, -82.7358169555664, 318.0477294921875), Vector3.new(0.09104403853416443, 0.5370116829872131, -0.8386485576629639), Vector3.new(-0.8810994625091553, 0.43589484691619873, 0.18346372246742249), Vector3.new(0.46408435702323914, 0.7222291231155396, 0.5128455758094788))
+		katana.Name = "Katana"
+		katana.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.38823533058166504, 0.37254902720451355, 0.38431376218795776)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-85.3121337890625, 11.887321472167969, 78.60133361816406), Vector3.new(0.09104403853416443, 0.5370116829872131, -0.8386485576629639), Vector3.new(-0.8810994625091553, 0.43589484691619873, 0.18346372246742249), Vector3.new(0.46408435702323914, 0.7222291231155396, 0.5128455758094788))
+		handle.Color = Color3.new(0.388235, 0.372549, 0.384314)
+		handle.Orientation = Vector3.new(-46.23899841308594, 42.143001556396484, 50.933998107910156)
+		handle.Reflectance = 0.4000000059604645
+		handle.Rotation = Vector3.new(-54.62200164794922, 27.650999069213867, 84.10099792480469)
+		handle.Size = Vector3.new(1, 0.800000011920929, 4)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = katana
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "http://www.roblox.com/asset/?id=11442510"
+		mesh.TextureId = "http://www.roblox.com/asset/?id=11442524"
+		mesh.Scale = Vector3.new(1.7000000476837158, 1.7000000476837158, 1.7000000476837158)
+		mesh.Parent = handle
+
+		local slash = Instance.new("Sound")
+		slash.RollOffMode = Enum.RollOffMode.InverseTapered
+		slash.SoundId = "rbxassetid://7118966167"
+		slash.Name = "Slash"
+		slash.Parent = katana
+
+		local slash_anim = Instance.new("Animation")
+		slash_anim.AnimationId = "rbxassetid://218504594"
+		slash_anim.Name = "SlashAnim"
+		slash_anim.Parent = katana
+
+		katana.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://218504594"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=handle c.MaxDistance=math.huge c.SoundId="rbxassetid://88633606"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)
+
+
+		katana.Activated:Connect(function()
+			local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(slash_anim)
+			AnimTrack:Play()
+			slash:Play()
+		end)
+	end)
+end;
+task.spawn(C_12);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_14()
+	local script = G2L["14"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local gravity_coil = Instance.new("Tool")
+		gravity_coil.Grip = CFrame.fromMatrix(Vector3.new(0, 0, 1), Vector3.new(-1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, -1))
+		gravity_coil.GripForward = Vector3.new(-0, -0, 1)
+		gravity_coil.GripPos = Vector3.new(0, 0, 1)
+		gravity_coil.GripRight = Vector3.new(-1, 0, 0)
+		gravity_coil.TextureId = "rbxassetid://16619617"
+		gravity_coil.WorldPivot = CFrame.fromMatrix(Vector3.new(-115.010009765625, 40.13588333129883, 95.49311828613281), Vector3.new(-1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, -1))
+		gravity_coil.Name = "Gravity Coil"
+		gravity_coil.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.803921639919281, 0.803921639919281, 0.803921639919281)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-115.02493286132812, 40.14291000366211, 95.61811828613281), Vector3.new(-1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, -1))
+		handle.Color = Color3.new(0.803922, 0.803922, 0.803922)
+		handle.Locked = true
+		handle.Orientation = Vector3.new(0, 180, 0)
+		handle.Rotation = Vector3.new(180, 0, 180)
+		handle.Size = Vector3.new(1, 1.2000000476837158, 2)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = gravity_coil
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "http://www.roblox.com/asset/?id=16606212"
+		mesh.TextureId = "http://www.roblox.com/asset/?id=16606141"
+		mesh.Scale = Vector3.new(0.699999988079071, 0.699999988079071, 0.699999988079071)
+		mesh.Parent = handle
+
+		gravity_coil.Equipped:Connect(function()
+			game.Players.LocalPlayer.Humanoid.JumpPower = 250
+		end)
+
+		gravity_coil.Unequipped:Connect(function()
+			game.Players.LocalPlayer.Humanoid.JumpPower = 50
+		end)
+	end)
+end;
+task.spawn(C_14);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_16()
+	local script = G2L["16"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local virtual_sword = Instance.new("Tool")
+		virtual_sword.Grip = CFrame.fromMatrix(Vector3.new(0, -2.0999999046325684, 0.05000000074505806), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
+		virtual_sword.GripPos = Vector3.new(0, -2.0999999046325684, 0.05000000074505806)
+		virtual_sword.WorldPivot = CFrame.fromMatrix(Vector3.new(-126.77467346191406, 46.393455505371094, 87.13611602783203), Vector3.new(1, 0, 0), Vector3.new(0, 0.7071066498756409, -0.7071064114570618), Vector3.new(0, 0.7071064114570618, 0.7071066498756409))
+		virtual_sword.Name = "Virtual Sword"
+		virtual_sword.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-126.67467498779297, 46.23208999633789, 87.61997985839844), Vector3.new(1, 0, 0), Vector3.new(0, 0.7071066498756409, -0.7071064114570618), Vector3.new(0, 0.7071064114570618, 0.7071066498756409))
+		handle.Orientation = Vector3.new(-45, 0, 0)
+		handle.Rotation = Vector3.new(-45, 0, 0)
+		handle.Size = Vector3.new(0.20000000298023224, 5.1999993324279785, 0.8000000715255737)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = virtual_sword
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "http://www.roblox.com/asset/?id=130101214"
+		mesh.TextureId = "http://www.roblox.com/asset/?id=262695937"
+		mesh.Parent = handle
+
+		local attack = Instance.new("Animation")
+		attack.AnimationId = "http://www.roblox.com/Asset?ID=105371766"
+		attack.Name = "Attack"
+		attack.Parent = virtual_sword
+
+		local slash = Instance.new("Sound")
+		slash.SoundId = "rbxassetid://88633606"
+		slash.Volume = 1
+		slash.Name = "Slash"
+		slash.Parent = handle
+
+		virtual_sword.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://218504594"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=handle c.MaxDistance=math.huge c.SoundId="rbxassetid://88633606"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)
+		virtual_sword.Activated:Connect(function()
+			slash:Play()
+			local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(attack)
+			AnimTrack:Play()
+		end)
+	end)
+end;
+task.spawn(C_16);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_18()
+	local script = G2L["18"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local bone_scythe = Instance.new("Tool")
+		bone_scythe.Grip = CFrame.fromMatrix(Vector3.new(0.9399999976158142, -4.699999809265137, -0.1599999964237213), Vector3.new(0, 0, -1), Vector3.new(0, 1, 0), Vector3.new(1, -0, 0))
+		bone_scythe.GripForward = Vector3.new(-1, 0, -0)
+		bone_scythe.GripPos = Vector3.new(0.9399999976158142, -4.699999809265137, -0.1599999964237213)
+		bone_scythe.GripRight = Vector3.new(0, 0, -1)
+		bone_scythe.TextureId = "http://www.roblox.com/asset/?id=95891250"
+		bone_scythe.WorldPivot = CFrame.fromMatrix(Vector3.new(-592.6234130859375, -2.7787551879882812, -358.5831298828125), Vector3.new(-0.7182339429855347, 0.6896819472312927, 0.0920809954404831), Vector3.new(0.692624568939209, 0.7212983965873718, 5.2140322281957197e-08), Vector3.new(-0.06641782820224762, 0.06377758830785751, -0.9957515597343445))
+		bone_scythe.Name = "Bone Scythe"
+		bone_scythe.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-101.70169067382812, 12.395641326904297, 54.50341796875), Vector3.new(-0.7182339429855347, 0.6896819472312927, 0.0920809954404831), Vector3.new(0.692624568939209, 0.7212983965873718, 5.2140322281957197e-08), Vector3.new(-0.06641782820224762, 0.06377758830785751, -0.9957515597343445))
+		handle.Orientation = Vector3.new(-3.6570000648498535, -176.1840057373047, 43.715999603271484)
+		handle.Rotation = Vector3.new(-176.3350067138672, -3.808000087738037, -136.0399932861328)
+		handle.Size = Vector3.new(4.599997043609619, 2.200000286102295, 0.5000003576278687)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = bone_scythe
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "http://www.roblox.com/asset/?id=95891318"
+		mesh.TextureId = "http://www.roblox.com/asset/?id=95891299"
+		mesh.Scale = Vector3.new(0.800000011920929, 0.800000011920929, 0.800000011920929)
+		mesh.Parent = handle
+
+		local swing = Instance.new("Animation")
+		swing.AnimationId = "rbxassetid://218504594"
+		swing.Name = "Swing"
+		swing.Parent = handle
+
+		local swings = Instance.new("Sound")
+		swings.SoundId = "rbxassetid://8971633315"
+		swings.Name = "Swing"
+		swings.Parent = bone_scythe
+
+		local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(swing)
+
+		bone_scythe.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://218504594"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=handle c.MaxDistance=math.huge c.SoundId="rbxassetid://88633606"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)
+
+		bone_scythe.Activated:Connect(function()
+			AnimTrack:Play()
+			swings:Play()
+		end)
+
+
+	end)
+end;
+task.spawn(C_18);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_1a()
+	local script = G2L["1a"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local rainbow_sword = Instance.new("Tool")
+		rainbow_sword.Grip = CFrame.fromMatrix(Vector3.new(0, 0, -1.5), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1), Vector3.new(1, 0, 0))
+		rainbow_sword.GripForward = Vector3.new(-1, -0, -0)
+		rainbow_sword.GripPos = Vector3.new(0, 0, -1.5)
+		rainbow_sword.GripRight = Vector3.new(0, 1, 0)
+		rainbow_sword.GripUp = Vector3.new(0, 0, 1)
+		rainbow_sword.WorldPivot = CFrame.fromMatrix(Vector3.new(-99.42149353027344, 21.104740142822266, 105.01734161376953), Vector3.new(0.09104403853416443, 0.5370116829872131, -0.8386485576629639), Vector3.new(-0.8810994625091553, 0.43589484691619873, 0.18346372246742249), Vector3.new(0.46408435702323914, 0.7222291231155396, 0.5128455758094788))
+		rainbow_sword.Name = "Rainbow Sword"
+		rainbow_sword.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.38823533058166504, 0.37254902720451355, 0.38431376218795776)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-99.32266235351562, 20.787370681762695, 104.22865295410156), Vector3.new(0.09104403853416443, 0.5370116829872131, -0.8386485576629639), Vector3.new(-0.8810994625091553, 0.43589484691619873, 0.18346372246742249), Vector3.new(0.46408435702323914, 0.7222291231155396, 0.5128455758094788))
+		handle.Color = Color3.new(0.388235, 0.372549, 0.384314)
+		handle.Locked = true
+		handle.Orientation = Vector3.new(-46.23899841308594, 42.143001556396484, 50.933998107910156)
+		handle.Reflectance = 0.4000000059604645
+		handle.Rotation = Vector3.new(-54.62200164794922, 27.650999069213867, 84.10099792480469)
+		handle.Size = Vector3.new(1, 0.800000011920929, 4)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = rainbow_sword
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "http://www.roblox.com/asset/?id=80557857"
+		mesh.TextureId = "http://www.roblox.com/asset/?id=157345185 "
+		mesh.Parent = handle
+
+		local slash = Instance.new("Animation")
+		slash.AnimationId = "http://www.roblox.com/Asset?ID=105371766"
+		slash.Name = "Slash"
+		slash.Parent = rainbow_sword
+
+		rainbow_sword.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=workspace c.MaxDistance=math.huge c.SoundId="rbxassetid://608537390"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)end end end end)
+
+		rainbow_sword.Activated:Connect(function()
+			local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(slash)
+
+			AnimTrack:Play()
+		end)
+	end)
+end;
+task.spawn(C_1a);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_1c()
+	local script = G2L["1c"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local overseer_sword = Instance.new("Tool")
+		overseer_sword.Grip = CFrame.fromMatrix(Vector3.new(-0, -2, 0.10000000149011612), Vector3.new(0.954479992389679, 0, -0.2982749938964844), Vector3.new(0, 1, 0), Vector3.new(0.2982749938964844, -0, 0.954479992389679))
+		overseer_sword.GripForward = Vector3.new(-0.2982749938964844, 0, -0.954479992389679)
+		overseer_sword.GripPos = Vector3.new(-0, -2, 0.10000000149011612)
+		overseer_sword.GripRight = Vector3.new(0.954479992389679, 0, -0.2982749938964844)
+		overseer_sword.TextureId = "http://www.roblox.com/asset/?id=101420051"
+		overseer_sword.WorldPivot = CFrame.fromMatrix(Vector3.new(-82.68766021728516, 12.619991302490234, 60.54737854003906), Vector3.new(1, 0, 0), Vector3.new(0, -1, 0), Vector3.new(0, 0, -1))
+		overseer_sword.Name = "Overseer Sword"
+		overseer_sword.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-82.68766021728516, 12.619991302490234, 60.54737854003906), Vector3.new(1, 4.795679478530879e-12, 0), Vector3.new(-4.795679478530879e-12, -1, 0), Vector3.new(0, 0, -1))
+		handle.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+		handle.Material = Enum.Material.Slate
+		handle.Orientation = Vector3.new(0, 180, 180)
+		handle.Rotation = Vector3.new(180, 0, 0)
+		handle.Size = Vector3.new(0.2600000500679016, 5.240000247955322, 0.6399996280670166)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = overseer_sword
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "http://www.roblox.com/asset/?id=94840342"
+		mesh.TextureId = "http://www.roblox.com/asset/?id=250727362"
+		mesh.Scale = Vector3.new(0.75, 0.75, 0.75)
+		mesh.Parent = handle
+
+		local slash = Instance.new("Animation")
+		slash.AnimationId = "http://www.roblox.com/Asset?ID=74813494"
+		slash.Name = "Slash"
+		slash.Parent = overseer_sword
+
+		local slash_2 = Instance.new("Sound")
+		slash_2.RollOffMode = Enum.RollOffMode.InverseTapered
+		slash_2.SoundId = "rbxassetid://7118966167"
+		slash_2.Name = "Slash"
+		slash_2.Parent = overseer_sword
+
+
+		overseer_sword.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=workspace c.MaxDistance=math.huge c.SoundId="rbxassetid://608537390"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)end end end end)
+
+
+		overseer_sword.Activated:Connect(function()
+			local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(slash)
+
+			AnimTrack:Play()
+			slash_2:Play()
+		end)
+	end)
+end;
+task.spawn(C_1c);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_1e()
+	local script = G2L["1e"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local sword_of_water = Instance.new("Tool")
+		sword_of_water.Grip = CFrame.fromMatrix(Vector3.new(0, 0.05000000074505806, 1.649999976158142), Vector3.new(1, -0, 0), Vector3.new(0, 0.004252098500728607, -0.9999909996986389), Vector3.new(0, 0.9999909996986389, 0.004252098500728607))
+		sword_of_water.GripForward = Vector3.new(-0, -0.9999909996986389, -0.004252098500728607)
+		sword_of_water.GripPos = Vector3.new(0, 0.05000000074505806, 1.649999976158142)
+		sword_of_water.GripUp = Vector3.new(0, 0.004252098500728607, -0.9999909996986389)
+		sword_of_water.TextureId = "rbxassetid://365565018"
+		sword_of_water.WorldPivot = CFrame.fromMatrix(Vector3.new(-115.70056915283203, 21.035009384155273, 127.508544921875), Vector3.new(-0.7774867415428162, -1.4377222612438345e-07, 0.628899335861206), Vector3.new(-0.45413798093795776, -0.6917724609375, -0.5614354014396667), Vector3.new(0.43505528569221497, -0.7221156358718872, 0.5378438234329224))
+		sword_of_water.Name = "Sword Of Water"
+		sword_of_water.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-115.4384765625, 20.969938278198242, 127.67354583740234), Vector3.new(-0.7774867415428162, -1.4377222612438345e-07, 0.628899335861206), Vector3.new(-0.45413798093795776, -0.6917724609375, -0.5614354014396667), Vector3.new(0.43505528569221497, -0.7221156358718872, 0.5378438234329224))
+		handle.Locked = true
+		handle.Orientation = Vector3.new(46.229000091552734, 38.96900177001953, 180)
+		handle.Rotation = Vector3.new(53.32099914550781, 25.788999557495117, 149.7100067138672)
+		handle.Size = Vector3.new(0.20000000298023224, 0.5, 4.5)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = sword_of_water
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "http://www.roblox.com/asset/?id=365565135"
+		mesh.TextureId = "http://www.roblox.com/asset/?id=365565061"
+		mesh.Scale = Vector3.new(2, 2, 2)
+		mesh.Parent = handle
+
+		local right_slash = Instance.new("Animation")
+		right_slash.AnimationId = "http://www.roblox.com/asset/?id=74813494"
+		right_slash.Name = "RightSlash"
+		right_slash.Parent = sword_of_water
+
+		local slash = Instance.new("Sound")
+		slash.PlaybackSpeed = 1.3489999771118164
+		slash.RollOffMinDistance = 0
+		slash.SoundId = "http://www.roblox.com/asset/?id=12222216"
+		slash.Name = "Slash"
+		slash.Parent = sword_of_water
+
+		sword_of_water.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://218504594"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=handle c.MaxDistance=math.huge c.SoundId="rbxassetid://88633606"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)
+
+
+		sword_of_water.Activated:Connect(function()
+			slash:Play()
+			local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(right_slash)
+			AnimTrack:Play()
+		end)
+	end)
+end;
+task.spawn(C_1e);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_20()
+	local script = G2L["20"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local elemental_sword = Instance.new("Tool")
+		elemental_sword.WorldPivot = CFrame.fromMatrix(Vector3.new(-127.79017639160156, 14.256746292114258, 123.2504653930664), Vector3.new(-0.13210035860538483, -0.7180091738700867, 0.6833853721618652), Vector3.new(-0.38257095217704773, -0.5990789532661438, -0.7033806443214417), Vector3.new(0.9144344329833984, -0.3543590307235718, -0.1955513209104538))
+		elemental_sword.Name = "Elemental Sword"
+		elemental_sword.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.Anchored = false
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.38823533058166504, 0.37254902720451355, 0.38431376218795776)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-127.79017639160156, 14.256746292114258, 123.2504653930664), Vector3.new(-0.13210035860538483, -0.7180091738700867, 0.6833853721618652), Vector3.new(-0.38257095217704773, -0.5990789532661438, -0.7033806443214417), Vector3.new(0.9144344329833984, -0.3543590307235718, -0.1955513209104538))
+		handle.Color = Color3.new(0.388235, 0.372549, 0.384314)
+		handle.Material = Enum.Material.Metal
+		handle.Orientation = Vector3.new(20.753999710083008, 102.07099914550781, -129.83999633789062)
+		handle.Reflectance = 0.4000000059604645
+		handle.Rotation = Vector3.new(118.89199829101562, 66.1259994506836, 109.05000305175781)
+		handle.Size = Vector3.new(1, 4.760000228881836, 0.20000000298023224)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = elemental_sword
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "http://www.roblox.com/asset/?id=53351910 "
+		mesh.TextureId = "http://www.roblox.com/asset/?id=300461098"
+		mesh.Scale = Vector3.new(0.75, 0.75, 0.75)
+		mesh.Parent = handle
+
+
+		local swing = Instance.new("Animation")
+		swing.AnimationId = "rbxassetid://218504594"
+		swing.Name = "Swing"
+		swing.Parent = elemental_sword
+
+		local slash = Instance.new("Sound")
+		slash.SoundId = "rbxassetid://88633606"
+		slash.Volume = 1
+		slash.Name = "Slash"
+		slash.Parent = handle
+
+		elemental_sword.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://218504594"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=handle c.MaxDistance=math.huge c.SoundId="rbxassetid://88633606"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)
+
+
+		elemental_sword.Activated:Connect(function()
+			slash:Play()
+			local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(swing)
+			AnimTrack:Play()
+		end)
+
+	end)
+end;
+task.spawn(C_20);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_22()
+	local script = G2L["22"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local earth_sword = Instance.new("Tool")
+		earth_sword.Grip = CFrame.fromMatrix(Vector3.new(0, 0, 1.649999976158142), Vector3.new(1, -0, 0), Vector3.new(0, 0.00008100445847958326, -1), Vector3.new(0, 1, 0.00008100445847958326))
+		earth_sword.GripForward = Vector3.new(-0, -1, -0.00008100445847958326)
+		earth_sword.GripPos = Vector3.new(0, 0, 1.649999976158142)
+		earth_sword.GripUp = Vector3.new(0, 0.00008100445847958326, -1)
+		earth_sword.TextureId = "http://www.roblox.com/asset/?id=238923910"
+		earth_sword.WorldPivot = CFrame.fromMatrix(Vector3.new(-255.09915161132812, 20.89813232421875, 248.19613647460938), Vector3.new(1, -4.956277521728225e-08, 1.0336680844602597e-07), Vector3.new(-3.2489527512780114e-08, 0.7421950697898865, 0.6701838374137878), Vector3.new(-1.0993451127205844e-07, -0.6701838374137878, 0.7421950697898865))
+		earth_sword.Name = "Earth Sword"
+		earth_sword.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-127.51390075683594, 11.609689712524414, 124.06744384765625), Vector3.new(1, -4.956277521728225e-08, 1.0336680844602597e-07), Vector3.new(-3.2489527512780114e-08, 0.7421950697898865, 0.6701838374137878), Vector3.new(-1.0993451127205844e-07, -0.6701838374137878, 0.7421950697898865))
+		handle.Locked = true
+		handle.Orientation = Vector3.new(42.08100128173828, 0, 0)
+		handle.Rotation = Vector3.new(42.08100128173828, 0, 0)
+		handle.Size = Vector3.new(0.25, 0.5, 4.25)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = earth_sword
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "http://www.roblox.com/asset/?id=238923829"
+		mesh.TextureId = "http://www.roblox.com/asset/?id=238923885"
+		mesh.Parent = handle
+
+		local right_slash = Instance.new("Animation")
+		right_slash.AnimationId = "http://www.roblox.com/asset/?id=74813494"
+		right_slash.Name = "RightSlash"
+		right_slash.Parent = earth_sword
+
+		local slash = Instance.new("Sound")
+		slash.SoundId = "http://www.roblox.com/asset/?id=96667910"
+		slash.Volume = 1
+		slash.Name = "Slash"
+		slash.Parent = earth_sword
+
+		earth_sword.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://218504594"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=handle c.MaxDistance=math.huge c.SoundId="rbxassetid://88633606"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)
+
+
+		earth_sword.Activated:Connect(function()
+			local Animtrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(right_slash)
+			Animtrack:Play()
+			slash:Play()
+		end)
+	end)
+end;
+task.spawn(C_22);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_24()
+	local script = G2L["24"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local eyeof_hell = Instance.new("Tool")
+		eyeof_hell.Grip = CFrame.fromMatrix(Vector3.new(-0, -2.0225276947021484, -0.07051658630371094), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
+		eyeof_hell.GripPos = Vector3.new(-0, -2.0225276947021484, -0.07051658630371094)
+		eyeof_hell.WorldPivot = CFrame.fromMatrix(Vector3.new(-126.59730529785156, 19.595468521118164, 81.84304809570312), Vector3.new(2.659718667530342e-09, -3.474255105828661e-09, -1), Vector3.new(-0.6130494475364685, 0.7900444269180298, -4.375372952836187e-09), Vector3.new(0.7900444269180298, 0.6130494475364685, -2.8575650526385665e-11))
+		eyeof_hell.Name = "Eye of Hell"
+		eyeof_hell.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.38823533058166504, 0.37254902720451355, 0.38431376218795776)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-126.56998443603516, 19.582735061645508, 81.9730453491211), Vector3.new(2.659718667530342e-09, -3.474255105828661e-09, -1), Vector3.new(-0.6130494475364685, 0.7900444269180298, -4.375372952836187e-09), Vector3.new(0.7900444269180298, 0.6130494475364685, -2.8575650526385665e-11))
+		handle.Color = Color3.new(0.388235, 0.372549, 0.384314)
+		handle.Material = Enum.Material.Concrete
+		handle.Orientation = Vector3.new(-37.810001373291016, 90, 0)
+		handle.Rotation = Vector3.new(-90, 52.189998626708984, 90)
+		handle.Size = Vector3.new(0.2600000500679016, 5.240000247955322, 0.6399996280670166)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = eyeof_hell
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "http://www.roblox.com/asset/?id=94840342"
+		mesh.TextureId = "http://www.roblox.com/asset/?id=94840359"
+		mesh.Scale = Vector3.new(0.75, 0.75, 0.75)
+		mesh.Parent = handle
+
+		local right_slash = Instance.new("Animation")
+		right_slash.AnimationId = "http://www.roblox.com/Asset?ID=74813494"
+		right_slash.Name = "RightSlash"
+		right_slash.Parent = eyeof_hell
+
+		local slash = Instance.new("Sound")
+		slash.RollOffMode = Enum.RollOffMode.InverseTapered
+		slash.SoundId = "rbxassetid://5951797902"
+		slash.Name = "Slash"
+		slash.Parent = eyeof_hell
+
+		eyeof_hell.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://218504594"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=handle c.MaxDistance=math.huge c.SoundId="rbxassetid://88633606"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)
+
+
+		eyeof_hell.Activated:Connect(function()
+			local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(right_slash)
+			AnimTrack:Play()
+			slash:Play()
+		end)
+	end)
+end;
+task.spawn(C_24);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_26()
+	local script = G2L["26"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local dark_matter_sword = Instance.new("Tool")
+		dark_matter_sword.WorldPivot = CFrame.fromMatrix(Vector3.new(-94.51766204833984, 13.949999809265137, 60.71737289428711), Vector3.new(-1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, -1))
+		dark_matter_sword.Name = "Dark Matter Sword"
+		dark_matter_sword.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.Anchored = true
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.07058823853731155, 0.9333333969116211, 0.8313726186752319)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-94.51766204833984, 13.949999809265137, 60.71737289428711), Vector3.new(-1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, -1))
+		handle.Color = Color3.new(0.0705882, 0.933333, 0.831373)
+		handle.Material = Enum.Material.Neon
+		handle.Orientation = Vector3.new(0, 180, 0)
+		handle.Rotation = Vector3.new(180, 0, 180)
+		handle.Size = Vector3.new(1, 1, 1)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = dark_matter_sword
+
+		local special_mesh = Instance.new("SpecialMesh")
+		special_mesh.MeshType = Enum.MeshType.FileMesh
+		special_mesh.MeshId = "rbxassetid://14606702906"
+		special_mesh.TextureId = "rbxassetid://14606728204"
+		special_mesh.Name = "SpecialMesh"
+		special_mesh.Parent = handle
+
+		handle.Touched:Connect(function()end)
+		local touch_interest = handle:WaitForChild("TouchInterest")
+
+		local slash = Instance.new("Sound")
+		slash.RollOffMode = Enum.RollOffMode.InverseTapered
+		slash.SoundId = "rbxassetid://9116197252"
+		slash.Name = "Slash"
+		slash.Parent = dark_matter_sword
+
+		local slash_2 = Instance.new("Animation")
+		slash_2.AnimationId = "rbxassetid://218504594"
+		slash_2.Name = "Slash"
+		slash_2.Parent = dark_matter_sword
+
+		dark_matter_sword.Activated:Connect(function()
+			local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(slash_2)
+			AnimTrack:Play()
+			slash:Play()
+		end)
+
+		dark_matter_sword.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://218504594"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=handle c.MaxDistance=math.huge c.SoundId="rbxassetid://88633606"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)
+
+	end)
+end;
+task.spawn(C_26);
+-- StarterGui.KillAllSkids.Frame.TextButton.LocalScript
+local function C_28()
+	local script = G2L["28"];
+	script.Parent.Activated:Connect(function()
+		--[[
+		Roblox2Lua
+		----------
+		
+		This code was generated using
+		Deluct's Roblox2Lua plugin.
+	]]--
+
+		--// Instances
+
+		local buster_sword = Instance.new("Tool")
+		buster_sword.Grip = CFrame.fromMatrix(Vector3.new(0, -2.6000003814697266, -9.237056920134018e-15), Vector3.new(0.25881901383399963, 0, 0.9659258127212524), Vector3.new(0, 1, 0), Vector3.new(-0.9659258127212524, 0, 0.25881901383399963))
+		buster_sword.GripForward = Vector3.new(0.9659258127212524, -0, -0.25881901383399963)
+		buster_sword.GripPos = Vector3.new(0, -2.6000003814697266, -9.237056920134018e-15)
+		buster_sword.GripRight = Vector3.new(0.25881901383399963, 0, 0.9659258127212524)
+		buster_sword.WorldPivot = CFrame.fromMatrix(Vector3.new(-72.59867858886719, 11.500005722045898, 185.67669677734375), Vector3.new(-0.7933347821235657, 0.6087856888771057, 0.00003051804378628731), Vector3.new(-0.6087856888771057, -0.7933347821235657, -0.000030517112463712692), Vector3.new(0.000005632640750263818, -0.00004278923734091222, 1))
+		buster_sword.Name = "Buster Sword"
+		buster_sword.Parent = game.Players.LocalPlayer.Backpack
+
+		local handle = Instance.new("Part")
+		handle.Shape = Enum.PartType.Ball
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-72.59867858886719, 11.500005722045898, 185.67669677734375), Vector3.new(-0.7933347821235657, 0.6087856888771057, 0.00003051804378628731), Vector3.new(-0.6087856888771057, -0.7933347821235657, -0.000030517112463712692), Vector3.new(0.000005632640750263818, -0.00004278923734091222, 1))
+		handle.Orientation = Vector3.new(0.0020000000949949026, 0, 142.4980010986328)
+		handle.Rotation = Vector3.new(0.0020000000949949026, 0, 142.4980010986328)
+		handle.Size = Vector3.new(3, 3, 3)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = "Handle"
+		handle.Parent = buster_sword
+
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "http://www.roblox.com/asset/?id=83509558"
+		mesh.TextureId = "http://www.roblox.com/asset/?id=83509797"
+		mesh.Parent = handle
+
+		handle.Touched:Connect(function()end)
+		local touch_interest = handle:WaitForChild("TouchInterest")
+
+		local swing = Instance.new("Sound")
+		swing.RollOffMode = Enum.RollOffMode.InverseTapered
+		swing.SoundId = "rbxassetid://8971633315"
+		swing.Name = "Swing"
+		swing.Parent = buster_sword
+
+		local slash = Instance.new("Animation")
+		slash.AnimationId = "rbxassetid://218504594"
+		slash.Name = "Slash"
+		slash.Parent = buster_sword
+
+		buster_sword.Activated:Connect(function()
+			swing:Play()
+			local AnimTrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(slash)
+			AnimTrack:Play()
+		end)
+
+		buster_sword.Activated:Connect(function()local a=game.Players.LocalPlayer local b="74894663"local c=Instance.new("Animation")c.AnimationId="rbxassetid://218504594"..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new("Sound")c.Parent=handle c.MaxDistance=math.huge c.SoundId="rbxassetid://88633606"c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)
+
+	end)
+end;
+task.spawn(C_28);
+-- StarterGui.KillAllSkids.LocalScript
+local function C_29()
+	local script = G2L["29"];
+	game.StarterGui:SetCore("SendNotification",{
+		Title = "Made By BlueCorgi99",
+		Text = "PLEASE DO NOT SKID.",
+		Time = 10 ---time in seconds
+	})
+end;
+task.spawn(C_29);
+
+return G2L["1"], require;
